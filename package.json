@@ -1,0 +1,22 @@
+{
+  "name": "evil_guess",
+  "version": "1.0.0",
+  "description": "Guessing Game where its always worse case scenario",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivinano/evil_Guessing_Game.git"
+  },
+  "author": "Richard Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivinano/evil_Guessing_Game/issues"
+  },
+  "homepage": "https://github.com/vivinano/evil_Guessing_Game#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
