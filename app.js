@@ -20,23 +20,22 @@ rl.on('line', (number) =>{
      var correct = numarray[Math.round(Math.random())];
   }
 
-  if(number == correct){
-    rl.close();
-    console.log('Correct');
-
-  }
+/* */
 
   var numremove = numarray.indexOf(number);
   var lessthan = numarray.slice(0,numremove).length;
   var greaterthan = numarray.slice(numremove,numarray.length).length;
-
-   if(lessthan > greaterthan){
+   if(number == correct){
+     rl.close();
+     console.log('Correct');
+   }
+   else if(lessthan > greaterthan){
      numarray = numarray.slice(0,(numremove));
-     console.log('Guess Lower?')
+     console.log('Guess Lower')
    }
    else if(lessthan < greaterthan){
      numarray = numarray.slice((numremove + 1),numarray.length);
-     console.log('Guess Higher?');
+     console.log('Guess Higher');
    }
    else if(lessthan == greaterthan){
      var randomint = Math.round(Math.random());
